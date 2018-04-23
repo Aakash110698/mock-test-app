@@ -32,8 +32,8 @@ app.get('/', (req, res) => {
 });
 
 require('./app/routes/question.routes')(app);
-var port_number = server.listen(process.env.PORT || 3000);
+var port_number = app.listen(process.env.PORT || 3000);
 // listen for requests
-app.listen(port, "0.0.0.0", function() {
+app.listen(port_number, "0.0.0.0", function() {
     console.log("Listening on Port 3000");
     });
