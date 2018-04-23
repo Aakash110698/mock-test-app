@@ -31,7 +31,8 @@ const question = new Question({
     index:"E",
     value:req.body.option_e
 }],
-explanation:req.body.explanation
+explanation:req.body.explanation,
+testid:req.body.testid
 
 });
 
